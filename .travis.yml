@@ -4,4 +4,5 @@ before_install:
     - gem install package_cloud
   
 script:
-    - package_cloud repository create travisci_test
+    - package_cloud push alchen/test-next /test-v1.0.zip
+    # - package_cloud repository create travisci_test
