@@ -3,5 +3,5 @@
 before_install:
     - gem install package_cloud
   
-  script:
-    - package_cloud repository create prod
+script:
+    - package_cloud repository create travisci_test
