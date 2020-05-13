@@ -9,7 +9,8 @@ before_install:
     # - gem install package_cloud
   
 script:
+    - x="testING"
     - chmod +x ./test.sh
-    - ./test.sh frick
+    - ./test.sh $x not_var
     # - package_cloud push alchen/test-next /test.deb
     # - package_cloud repository create travisci_test
