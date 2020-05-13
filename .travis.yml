@@ -6,8 +6,11 @@ jdk:
 osx_image: xcode11.3
 
 before_install:
-    - gem install package_cloud
+    # - gem install package_cloud
   
 script:
-    - package_cloud push alchen/test-next /test.deb
+    - x="Test"
+    - chmod +x ./test.sh
+    - ./test.sh x
+    # - package_cloud push alchen/test-next /test.deb
     # - package_cloud repository create travisci_test
